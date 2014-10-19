@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FreeTV</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Free TV</string>
+    <string name="string_path_to_json_db">http://mobdev.com.ua/db/test.xml</string>
+    <string name="string_path_to_images">http://mobdev.com.ua/db/images/</string>
+    <string name="string_count_channels_is_zero">A bug in the server. Please try again later</string>
+    <string name="string_log_tag">logs</string>
+    <string name="string_dialog_message">Please wait</string>
+    <string name="string_exit">Exit</string>
+    <string name="server_path">ws://192.168.2.109:104</string>
+    <string name="string_show_advertisement">advertisement</string>
 
 </resources>

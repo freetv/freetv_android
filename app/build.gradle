@@ -1,25 +1,43 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'signature'
+            keyPassword 'monitorlg25um65'
+            storeFile file('D:/Data/Docs/freetv.com.ua/signature/signature.jks')
+            storePassword 'monitorlg25um65'
+        }
+    }
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
-
     defaultConfig {
-        applicationId "ua.com.freetv"
-        minSdkVersion 17
+        applicationId 'ua.com.freetv'
+        minSdkVersion 14
         targetSdkVersion 20
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
-            runProguard false
+            runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            runProguard true
+        }
+    }
+    productFlavors {
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':vitamioBundle30')
+    compile files('libs/json-simple-1.1.1.jar')
+    compile 'com.squareup.picasso:picasso:2.3.4'
+    compile files('libs/autobahn-0.5.0.jar')
+    compile files('libs/jackson-core-asl-1.9.7.jar')
+    compile files('libs/jackson-mapper-asl-1.9.7.jar')
 }
