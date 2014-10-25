@@ -15,9 +15,39 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
 -dontwarn com.squareup.okhttp.**
 -dontwarn de.tavendo.autobahn.**
+-dontwarn org.codehaus.**
+-dontwarn io.vov.vitamio.**
 -dontwarn org.json.**
--keepnames class * implements android.os.Parcelable {
-    public static final ** CREATOR;
+-dontwarn com.squareup.**
+-keep class io.vov.utils.** { *; }
+-keep class io.vov.vitamio.** { *; }
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
 }
