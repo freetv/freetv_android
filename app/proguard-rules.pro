@@ -31,6 +31,13 @@
 -keep public class * extends android.app.Activity
 -keep public class * extends android.app.Application
 
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** w(...);
+    public static *** v(...);
+    public static *** i(...);
+}
+
 -keepclasseswithmembernames class * {
     native <methods>;
 }
@@ -51,3 +58,4 @@
 -keep class * implements android.os.Parcelable {
   public static final android.os.Parcelable$Creator *;
 }
+

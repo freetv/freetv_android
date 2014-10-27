@@ -9,7 +9,8 @@ android {
             storePassword 'monitorlg25um65'
         }
     }
-    compileSdkVersion 20
+
+    compileSdkVersion 17
     buildToolsVersion '20.0.0'
     defaultConfig {
         applicationId 'ua.com.freetv'
