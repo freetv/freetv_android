@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/online_TV_Light" />
             <option value="$PROJECT_DIR$/vitamio" />
           </set>
         </option>

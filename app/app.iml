@@ -77,7 +77,10 @@
     <orderEntry type="library" exported="" name="autobahn-0.5.0" level="project" />
     <orderEntry type="library" exported="" name="jackson-mapper-asl-1.9.7" level="project" />
     <orderEntry type="library" exported="" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="play-services-6.1.11" level="project" />
     <orderEntry type="library" exported="" name="jackson-core-asl-1.9.7" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-20.0.0" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-20.0.0" level="project" />
     <orderEntry type="module" module-name="vitamio" exported="" />
   </component>
 </module>

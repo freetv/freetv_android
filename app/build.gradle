@@ -13,10 +13,10 @@ android {
     compileSdkVersion 17
     buildToolsVersion '20.0.0'
     defaultConfig {
-        applicationId 'ua.com.freetv'
+        applicationId 'ua.com.mobdev.onlinetv'
         minSdkVersion 14
         targetSdkVersion 20
-        versionCode 1
+        versionCode 7
         versionName '1.0'
         signingConfig signingConfigs.config
     }
@@ -43,4 +43,5 @@ dependencies {
     compile files('libs/jackson-core-asl-1.9.7.jar')
     compile files('libs/jackson-mapper-asl-1.9.7.jar')
     compile project(':vitamio')
+    compile 'com.google.android.gms:play-services:6.1.+'
 }
